@@ -11,10 +11,10 @@ const remove = function(head , index){
     const slow = dummy;
     const temp = head;
     const length =0;
-    while(temp != null){
-        length++;
-        temp = temp.next;
-    }
+    // while(temp != null){
+    //     length++;
+    //     temp = temp.next;
+    // }
     while(index-- > 0){
         fast = fast.next;
     }

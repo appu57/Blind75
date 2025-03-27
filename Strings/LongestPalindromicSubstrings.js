@@ -25,7 +25,7 @@ const longestPalindromic = function(s){
 
 
 //whenever longest/shortest substring  is asked use "SLIDING WINDOW WHERE START IS ALWAYS USED"
-
+//https://leetcode.com/problems/minimum-size-subarray-sum/submissions/1048523080/?envType=problem-list-v2&envId=sliding-window
 function expendAroundCenter(s, left, right) {
     while(left >= 0 && right < s.length && s[left] === s[right]) {
         left--;

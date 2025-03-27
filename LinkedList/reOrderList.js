@@ -13,7 +13,7 @@ var reorderList = function(head) {
     slow.next = null;
     let node = null;
 
-    while (second) {
+    while (second) { //reverse linked list formula
         const temp = second.next;
         second.next = node;
         node = second;

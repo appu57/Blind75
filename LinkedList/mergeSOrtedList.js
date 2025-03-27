@@ -12,10 +12,10 @@ const mergeKLists = (lists) => {
       let mergedLists = [];
   
       for (let i = 0; i < lists.length; i += 2) {
-        list1 = lists[i];
-        list2 = i + 1 < lists.length ? lists[i + 1] : null;
+        let list1 = lists[i];
+        let list2 = i + 1 < lists.length ? lists[i + 1] : null;
   
-        mergedLists.push(mergeTwoLists(list1, list2));//merge two lists at once
+        mergedLists.push(mergeSortedLinkedListRecursive(list1, list2));//merge two lists at once
       }
   
       lists = mergedLists;
